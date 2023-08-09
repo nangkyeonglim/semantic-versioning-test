@@ -1,0 +1,14 @@
+# .github > workflows/semantic-versioning.yml
+name: semantic-versioning
+on:
+  pull_request:
+    types: [closed]
+jobs:
+  semantic-versioning:
+    runs-on: ubuntu-18.04
+    if: github.event.pull_request.merged == true && github.base_ref == 'main'
+    steps:
+      - name: semantic-versioning
+        uses: release-drafter/release-drafter@v5
+        with:
+          config-name: draft-release.yml
