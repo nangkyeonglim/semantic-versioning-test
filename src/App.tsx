@@ -16,7 +16,7 @@ function App() {
           target='_blank'
           rel='noopener noreferrer'
         >
-          추가추가
+          추가추가추가
         </a>
       </header>
     </div>
