@@ -43,21 +43,21 @@ jobs:
           contains(steps.pr-labels.outputs.labels, ' major ')
         run: |
           yarn version --major
-        working-directory: ./frontend
+        working-directory: ./
 
       - name: 마이너 버전 업데이트
         if: |
           contains(steps.pr-labels.outputs.labels, ' minor ')
         run: |
           yarn version --minor
-        working-directory: ./frontend
+        working-directory: ./
 
       - name: 패치 버전 업데이트
         if: |
           contains(steps.pr-labels.outputs.labels, ' patch ')
         run: |
           yarn version --patch
-        working-directory: ./frontend
+        working-directory: ./
 
       - name: main 브랜치 Push
         uses: ad-m/github-push-action@master
