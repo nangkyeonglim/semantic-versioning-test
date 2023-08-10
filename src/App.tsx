@@ -16,7 +16,7 @@ function App() {
           target='_blank'
           rel='noopener noreferrer'
         >
-          추가ss
+          추가
         </a>
       </header>
     </div>
