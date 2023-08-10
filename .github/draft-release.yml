@@ -2,18 +2,6 @@
 
 name-template: 'v$RESOLVED_VERSION'
 tag-template: 'v$RESOLVED_VERSION'
-categories:
-  - title: 'Features'
-    label: 'feature'
-  - title: 'Refactoring'
-    label: 'refactor'
-  - title: 'Fixes'
-    label: 'bug'
-  - title: 'Settings'
-    label: 'setting'
-    label: 'infra'
-  - title: 'Etc'
-    label: 'docs'
 version-resolver:
   major:
     labels:
