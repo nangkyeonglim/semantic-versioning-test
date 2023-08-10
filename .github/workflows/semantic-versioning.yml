@@ -21,13 +21,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Github 회원 정보 설정
-        env:
-          MY_EMAIL: nangkyeonglim@gmail.com
-          MY_NAME: nangkyeonglim
-        run: |
-          git config --global user.email $MY_EMAIL
-          git config --global user.name $MY_NAME
+      # - name: Github 회원 정보 설정
+      #   env:
+      #     MY_EMAIL: nangkyeonglim@gmail.com
+      #     MY_NAME: nangkyeonglim
+      #   run: |
+      #     git config --global user.email $MY_EMAIL
+      #     git config --global user.name $MY_NAME
 
       - name: Node.js 설치
         uses: actions/setup-node@v3
@@ -36,7 +36,7 @@ jobs:
 
       - name: PR Label 확인
         id: pr-labels
-        uses: joerick/pr-labels-action@v1.0.6
+        uses: joerick/pr-labels-action@v1.0.9
 
       - name: 메이저 버전 업데이트
         if: |
