@@ -5,7 +5,7 @@ on:
     types: [closed]
 jobs:
   semantic-versioning:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     if: github.event.pull_request.merged == true && github.base_ref == 'main'
     steps:
       - name: semantic-versioning
