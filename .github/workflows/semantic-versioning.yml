@@ -23,8 +23,8 @@ jobs:
 
       - name: Github 회원 정보 설정
         env:
-          MY_EMAIL: nangkyeonglim@gmail.com
-          MY_NAME: nangkyeonglim
+          MY_EMAIL: 2023donggle@gmail.com
+          MY_NAME: Dong-gle
         run: |
           git config --global user.email $MY_EMAIL
           git config --global user.name $MY_NAME
